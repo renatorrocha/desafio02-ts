@@ -1,11 +1,11 @@
 import { Button } from '@chakra-ui/react'
 
-interface Props {
+interface IButtonForm {
   text: string
   action: () => void
 }
 
-export default function ButtonForm({ text, action }: Props) {
+export default function ButtonForm({ text, action }: IButtonForm) {
   return (
     <Button
       onClick={action}
@@ -14,7 +14,7 @@ export default function ButtonForm({ text, action }: Props) {
       width="100%"
       marginTop="5px"
     >
-      Button
+      {text}
     </Button>
   )
 }
