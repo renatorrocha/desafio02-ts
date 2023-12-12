@@ -1,6 +1,7 @@
-import { Center, ChakraProvider, Input, Box, Button } from '@chakra-ui/react'
+import { Center, Input, Box } from '@chakra-ui/react'
 import { login } from './services/login'
 import { Layout } from './components/Layout'
+import ButtonForm from './components/ButtonForm'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Input placeholder="email" />
           <Input placeholder="password" />
           <Center>
-            
+            <ButtonForm text="Login" action={login} />
           </Center>
         </Box>
       </Box>
