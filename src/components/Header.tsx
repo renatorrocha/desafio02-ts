@@ -2,7 +2,7 @@ import { Center, Heading, Highlight } from '@chakra-ui/react'
 
 export const Header = () => {
   return (
-    <Center h={'100px'}>
+    <Center bg={'purple.100'} h={'100px'}>
       <Heading>
         <Highlight
           query="Dio"

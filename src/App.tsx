@@ -7,7 +7,7 @@ import { Card } from './components/Card'
 export default function App() {
   return (
     <Layout>
-      <Box minHeight="100vh" backgroundColor="purple.100" padding="25px">
+      <Box minHeight="80vh" backgroundColor="purple.100" padding="25px">
         <Card text="Faça seu login" />
       </Box>
     </Layout>
