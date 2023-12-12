@@ -1,12 +1,13 @@
-import { Footer } from "./Footer"
-import { Header } from "./Header/Header"
+import { ChakraProvider } from '@chakra-ui/react'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
 export const Layout = ({ children }: any) => {
-  return(
-    <>
+  return (
+    <ChakraProvider>
       <Header />
-      { children }
+      {children}
       <Footer />
-    </>
+    </ChakraProvider>
   )
 }
