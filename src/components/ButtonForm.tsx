@@ -1,8 +1,9 @@
 import { Button } from '@chakra-ui/react'
+import { MouseEventHandler } from 'react'
 
 interface IButtonForm {
   text: string
-  action: () => void
+  action: MouseEventHandler
 }
 
 export default function ButtonForm({ text, action }: IButtonForm) {

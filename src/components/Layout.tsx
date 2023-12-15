@@ -1,13 +1,13 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import { Footer } from './Footer'
+import { Box, ChakraProvider } from '@chakra-ui/react'
 import { Header } from './Header'
 
 export const Layout = ({ children }: any) => {
   return (
     <ChakraProvider>
-      <Header />
-      {children}
-      <Footer />
+      <Box minHeight="100vh" backgroundColor={'purple.100'}>
+        <Header />
+        {children}
+      </Box>
     </ChakraProvider>
   )
 }
